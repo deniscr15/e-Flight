@@ -1,0 +1,125 @@
+.symbol > img {
+ 	border-radius: 50%;
+}
+
+.header-fixed .header {
+    background-color: #F8FAF9;
+    height: 100px;
+    padding-right: 60px;
+    box-shadow: 0px 10px 30px 0px rgba(82, 63, 105, 0.05);
+}
+
+.header-fixed.toolbar-fixed .toolbar {
+    padding: 0;
+    top: 100px;
+    left: 224px;
+    background-color: #F8FAF9;
+}
+
+.aside-enabled.aside-fixed.toolbar-fixed .toolbar {
+    left: 224px;
+}
+
+.wrapper {
+	/*background-color: #F8FAF9;*/
+}
+
+@media (min-width: 992px) {
+	.aside-enabled.aside-fixed .wrapper {
+	    padding-left: 224px;
+	}
+
+	.header-fixed.toolbar-fixed .toolbar {
+	    padding: 0px 60px;
+	}
+
+    .aside .aside-logo {
+        padding: 0 45px;
+    }
+}
+
+.content {
+    padding: 30px 60px;
+}
+
+.header-fixed.toolbar-fixed .wrapper {
+    padding-top: calc(100px + var(--kt-toolbar-height));
+}
+
+.aside {
+    width: 224px;
+    background-color: #009D50;
+}
+
+.aside .aside-menu {
+    width: 224px;
+    background-color: #009D50;
+}
+
+.aside.aside-dark {
+    background-color: #009D50;
+}
+
+.aside-dark .menu .menu-item .menu-link {
+    background-color: #009D50;
+}
+
+.aside-dark .menu .menu-item .menu-link.active {
+    background-color: #28C578;
+}
+
+.aside-dark .menu .menu-item .menu-link .menu-title {
+    color: #FFFFFF;
+}
+
+.aside-dark .menu .menu-item .menu-section {
+    color: #99D8B9!important;
+}
+
+.aside-dark .menu .menu-item.hover:not(.here)>.menu-link:not(.disabled):not(.active):not(.here), .aside-dark .menu .menu-item:not(.here) .menu-link:hover:not(.disabled):not(.active):not(.here) {
+    background-color: #28C578;
+}
+
+.aside-dark .menu .menu-item.show>.menu-link {
+    transition: color .2s ease,background-color .2s ease;
+    background-color: #28C578;
+    color: #fff;
+}
+
+.aside-dark .menu .menu-item.here>.menu-link {
+    transition: color .2s ease,background-color .2s ease;
+    background-color: #28C578;
+    color: #fff;
+}
+
+.aside-dark .menu .menu-item .menu-link.active .menu-bullet .bullet {
+    background-color: #fff;
+}
+
+.aside-dark .menu .menu-item .menu-link .menu-bullet .bullet {
+    background-color: #fff;
+}
+
+/*logo*/
+.aside.aside-dark .aside-logo {
+    background-color: #009D50;
+    height: 100px;
+}
+
+/*footer*/
+.flex-column-auto {
+    background-color: #009D50;
+}
+
+.aside.aside-dark .btn-custom {
+    color: #FFFFFF;
+    background-color: #28C578;
+    border-radius: 16px;
+}
+
+.nav.nav-pills.nav-pills-custom .nav-link.active, .nav.nav-pills.nav-pills-custom .show>.nav-link.active {
+    background-color: transparent;
+    border: 1px solid #009D50;
+    transition-duration: 1ms;
+    position: relative;
+}
