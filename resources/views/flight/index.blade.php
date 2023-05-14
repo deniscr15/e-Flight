@@ -141,9 +141,9 @@
 								#
 							</th>
 							<th class="min-w-125px">Date</th>
-							<th class="min-w-125px"></th>
-							<th></th>
-							<th class="min-w-125px"></th>
+							<th class="min-w-125px">Route</th>
+							<th>Operator</th>
+							<th class="min-w-125px">Aircraft</th>
 							<th class="min-w-125px"></th>
 							<th class="text-end min-w-100px">Actions</th>
 						</tr>
@@ -158,12 +158,12 @@
 								{{$key+1}}
 							</td>
 							<td>{{$flight->date}}</td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td>{{$flight->route->name}}</td>
+							<td>{{$flight->operator->name}}</td>
+							<td>{{$flight->aircraftType->name}}</td>
 							<td></td>
                             <td class="text-end">
-                                <form  method="POST" action="{{ route('flights.destroy', $flight->id) }}">
+                                {{--<form  method="POST" action="{{ route('flights.destroy', $flight->id) }}">
                                     @csrf
                                     
                                     <input name="_method" type="hidden" value="DELETE">
@@ -176,7 +176,7 @@
                                         </svg>
                                     </span>
                                     </button>
-                                </form>
+                                </form>--}}
                             </td>
 						</tr>
 						@endforeach
